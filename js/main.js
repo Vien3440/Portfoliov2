@@ -82,48 +82,51 @@ $(window).scroll(function(e){  /****Fonction ecoute le scroll***/
 
 /*************Section Formation*************/
 
+  $(document).ready(function(){
 
 
+$(window).resize(function(){
 
-
-$(document).ready(function(){
+var documentWidth= $(document).width();
+if (documentWidth > 900){
   $("#bouton1").click(function(){
 
     $('#desinateurIndus').addClass('animated flipInY');
     $("#desinateurIndus").css('visibility','visible');
       if (this){
-        $("#animation").css('visibility','hidden');
-        $('#animation').removeClass('animated flipInY');
+      $("#animation").css('visibility','hidden');
+      $('#animation').removeClass('animated flipInY');
+      $("#beweb").css('visibility','hidden');
+      $('#beweb').removeClass('animated flipInY');
+    }
+  });
+
+  $("#bouton2").click(function(){
+    $('#animation').addClass('animated flipInY');
+    $("#animation").css('visibility','visible');
+
+      if (this){
+        $("#desinateurIndus").css('visibility','hidden');
+        $('#desinateurIndus').removeClass('animated flipInY');
         $("#beweb").css('visibility','hidden');
         $('#beweb').removeClass('animated flipInY');
       }
     });
 
-    $("#bouton2").click(function(){
-      $('#animation').addClass('animated flipInY');
-      $("#animation").css('visibility','visible');
+    $("#bouton3").click(function(){
+      $('#beweb').addClass('animated flipInY');
+      $("#beweb").css('visibility','visible');
 
-        if (this){
-          $("#desinateurIndus").css('visibility','hidden');
-          $('#desinateurIndus').removeClass('animated flipInY');
-          $("#beweb").css('visibility','hidden');
-          $('#beweb').removeClass('animated flipInY');
+      if (this){
+        $("#desinateurIndus").css('visibility','hidden');
+        $('#desinateurIndus').removeClass('animated flipInY');
+        $("#animation").css('visibility','hidden');
+        $('#animation').removeClass('animated flipInY');
         }
       });
-
-      $("#bouton3").click(function(){
-        $('#beweb').addClass('animated flipInY');
-        $("#beweb").css('visibility','visible');
-
-        if (this){
-          $("#desinateurIndus").css('visibility','hidden');
-          $('#desinateurIndus').removeClass('animated flipInY');
-          $("#animation").css('visibility','hidden');
-          $('#animation').removeClass('animated flipInY');
-          }
-        });
-})
-
+    }
+  });
+});
 
 /****Skile Graphe****/
 
