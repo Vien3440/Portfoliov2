@@ -45,6 +45,9 @@
   display: flex;
   justify-content: space-around; }
 
+
+
+
 /*______________________Header________________________*/
 #fond1 {
   background-color: #00CA63;
@@ -108,9 +111,6 @@
   flex-direction: row;
   text-align: center;
   padding-left: 10px; }
-
-.listeLoisir {
-  padding-left: 30px; }
 
 /*___________________________Section 2 Formation________________________*/
 /****Skil bar ***/

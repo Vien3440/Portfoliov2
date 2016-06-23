@@ -91,41 +91,41 @@ var documentWidth= $(document).width();
 if (documentWidth > 900){
   $("#bouton1").click(function(){
 
-    $('#desinateurIndus').addClass('animated flipInY');
+    $('#desinateurIndus').addClass('animated bounceInLeft');
     $("#desinateurIndus").css('visibility','visible');
       if (this){
       $("#animation").css('visibility','hidden');
-      $('#animation').removeClass('animated flipInY');
+      $('#animation').removeClass('animated bounceInLeft');
       $("#beweb").css('visibility','hidden');
-      $('#beweb').removeClass('animated flipInY');
+      $('#beweb').removeClass('animated bounceInLeft');
     }
   });
 
   $("#bouton2").click(function(){
-    $('#animation').addClass('animated flipInY');
+    $('#animation').addClass('animated bounceInLeft');
     $("#animation").css('visibility','visible');
 
       if (this){
         $("#desinateurIndus").css('visibility','hidden');
-        $('#desinateurIndus').removeClass('animated flipInY');
+        $('#desinateurIndus').removeClass('animated bounceInLeft');
         $("#beweb").css('visibility','hidden');
-        $('#beweb').removeClass('animated flipInY');
+        $('#beweb').removeClass('animated bounceInLeft');
       }
     });
 
     $("#bouton3").click(function(){
-      $('#beweb').addClass('animated flipInY');
+      $('#beweb').addClass('animated bounceInLeft');
       $("#beweb").css('visibility','visible');
 
       if (this){
         $("#desinateurIndus").css('visibility','hidden');
-        $('#desinateurIndus').removeClass('animated flipInY');
+        $('#desinateurIndus').removeClass('animated bounceInLeft');
         $("#animation").css('visibility','hidden');
-        $('#animation').removeClass('animated flipInY');
+        $('#animation').removeClass('animated bounceInLeft');
         }
       });
     }
-  
+
 });
 
 /****Skile Graphe****/
