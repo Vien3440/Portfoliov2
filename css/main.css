@@ -48,10 +48,12 @@
 /*______________________Header________________________*/
 #fond1 {
   background-color: #00CA63;
+
   /********Couleur fond haute de page**********/
   height: 660px;
   /********Hauteur cadre page de garde**********/
-  box-shadow: 0 4px 2px -2px gray; }
+
+  }
 
 .titre {
   font-family: "yeti";
@@ -88,17 +90,12 @@
   background-color: #F05924;
   color: white; }
 
-.image1 {
-  padding-right: 10px;
-  padding-left: 10px;
-  position: relative;
-  bottom: 150px; }
-
-#loisir {
-  position: relative;
-  bottom: 200px;
+#loisir{
   font-family: "yeti";
-  font-size: 25px; }
+  font-size: 25px;
+  margin-top: 10%;
+}
+
 
 #loisir > header {
   font-size: 40px; }
@@ -126,7 +123,7 @@
 
 /*******Section2  *****/
 #Section2{
-  height: 620px;
+  height: 535px;
   width: 100%;
   margin: 0;
   display: flex;
@@ -138,9 +135,9 @@
 
 /*****Partie desinateurIndustriel***/
 #desinateurIndus {
-  bottom:135px;
+  top:12px;
   position: relative;
-  right: 233%;
+  right: 190%;
   font-family: "Basse";
   font-size: 20px;
   font-weight: bold;
@@ -150,27 +147,29 @@
  }
 
 #beweb {
-  position: absolute;
-  right: 800px;
-  padding-left: 120px;
-  top: 150px;
-  font-family: "Basse";
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  visibility: hidden; }
+    position: absolute;
+    float: right;
+    right: 30%;
+    padding-left: 100px;
+    top: 1530px;
+    font-family: "Basse";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    visibility: hidden;
+}
 
-#animation {
-  position: absolute;
-  float: right;
-  right: 800px;
-  padding-left: 100px;
-  top: 150px;
-  font-family: "Basse";
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  visibility: hidden; }
+  #animation {
+      position: absolute;
+      right:30%;
+      padding-left: 100px;
+      top: 1530px;
+      font-family: "Basse";
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      visibility: hidden;
+  }
 
   #bouton1{
     width: 240px!important;
@@ -183,6 +182,7 @@
     bottom: 350px;
     left: 20%;
     width:81%;
+    margin-top: 25%;
   }
 
   #bouton3{
@@ -193,12 +193,8 @@
   }
 
 .titreForma{
-  border: 0px;
-  margin: 0px;
-  padding:0px;
-  width:70px;
-  position: relative;
-  bottom: 10%;
+  width:9%;
+  position:relative;
   left: 15%;
   font-size: 60px;
   font-family: "yeti"; }
@@ -210,24 +206,31 @@
 
 .listeForma {
   position: relative;
-  bottom: 10px;
+  bottom: -40px;
   margin-top: 100px;
   font-size: 18px;
   font-family: "Basse";
  }
 
  .texteVignet{
-   width: 100%;
+   width: 80%;
  }
 
 .themeForma{ /****Image ariére plans***/
   position: absolute;
 }
 
+@media screen and (max-width: 992px) {
+  #Section2 {
+    display: none;
+
+  }
+}
+
+
 /*___________________________Section 3 Exp projet______________________*/
 #Section3 {
   /*********Experience - Projet******/
-  position: relative;
   height: 200%;
   background-color: #00CA63;
   margin: 0;

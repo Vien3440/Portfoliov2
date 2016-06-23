@@ -85,7 +85,7 @@ $(window).scroll(function(e){  /****Fonction ecoute le scroll***/
   $(document).ready(function(){
 
 
-$(window).resize(function(){
+
 
 var documentWidth= $(document).width();
 if (documentWidth > 900){
@@ -125,7 +125,7 @@ if (documentWidth > 900){
         }
       });
     }
-  });
+  
 });
 
 /****Skile Graphe****/
