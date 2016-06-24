@@ -4,6 +4,9 @@
 @font-face {
   font-family: "Basse";
   src: url("Mobile Sans.ttf"); }
+  body{
+    background-color:#00CA63;
+  }
 /*___________________Nav Bar_________________________*/
 .navbar {
   /*****Webkit pour transiton plus dousse ...*/
@@ -87,7 +90,7 @@
   /*******Bloc Section1 Qui je suis *****/
   margin: 0;
   padding: 0;
-  height: 700px;
+  padding-bottom: 4.5%;
   padding-top: 50px;
   padding-left: 50px;
   background-color: #F05924;
@@ -122,139 +125,31 @@
   display: inline-block; }
 
 /*******Section2  *****/
-#Section2{
-  height: 535px;
-  width: 100%;
-  margin: 0;
+#conteneurFormation header {
+  text-align: center; }
+#conteneurFormation ul {
   display: flex;
-  justify-content: flex-end;
-  background: url("image/formation.png");
-  background-position: left center;
-  color: white;
- }
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: gold;
+  height: 450px; }
 
-/*****Partie desinateurIndustriel***/
+#conteneurAnimation p {
+  position: absolute;
+  padding-top: 13%;
+  font-size: 40px; }
+
 #desinateurIndus {
-  top:12px;
-  position: relative;
-  right: 190%;
-  font-family: "Basse";
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
   visibility: hidden;
-  width: 190%;
- }
+  background-color: red; }
+
+#animation {
+  visibility: hidden;
+  background-color: pink; }
 
 #beweb {
-    position: absolute;
-    float: right;
-    right: 30%;
-    padding-left: 100px;
-    top: 1530px;
-    font-family: "Basse";
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    visibility: hidden;
-}
-
-  #animation {
-      position: absolute;
-      right:30%;
-      padding-left: 100px;
-      top: 1530px;
-      font-family: "Basse";
-      font-size: 20px;
-      font-weight: bold;
-      text-align: center;
-      visibility: hidden;
-  }
-
-  #bouton1{
-    width: 240px!important;
-    left: 20%;
-    width:81%;
-  }
-
-  #bouton2{
-    width: 240px!important;
-    bottom: 350px;
-    left: 20%;
-    width:81%;
-    margin-top: 25%;
-  }
-
-  #bouton3{
-    width: 240px!important;
-    bottom: 350px;
-    left: 20%;
-    width:81%;
-  }
-
-.titreForma{
-  width:9%;
-  position:relative;
-  left: 15%;
-  font-size: 60px;
-  font-family: "yeti"; }
-
-.texteSection2 {
-  width:30%;
-  background-color: #F05924;
-  border-top: 5px solid #F05924; }
-
-.listeForma {
-  position: relative;
-  bottom: -40px;
-  margin-top: 100px;
-  font-size: 18px;
-  font-family: "Basse";
- }
-
- .texteVignet{
-   width: 80%;
- }
-
-.themeForma{ /****Image ariére plans***/
-  position: absolute;
-}
-
-@media screen and (max-width: 992px) {
-  #Section2 {
-    display: none;
-
-  }
-}
-
-
-/*___________________________Section 3 Exp projet______________________*/
-#Section3 {
-  /*********Experience - Projet******/
-  height: 200%;
-  background-color: #00CA63;
-  margin: 0;
-  padding: 0;
-  color: white; }
-
-.titreXp {
-  padding-left: 100px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  font-size: 70px;
-  font-family: "yeti"; }
-
-.textXp {
-  padding-top: 30px;
-  padding-left: 70px;
-  width: 500px;
-  font-size: 20px;
-  font-family: "Basse"; }
-
-#lola {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
+  visibility: hidden;
+  background-color: green; }
 
 /********Contacte*******/
 .boite {

@@ -88,7 +88,7 @@ $(window).scroll(function(e){  /****Fonction ecoute le scroll***/
 
 
 var documentWidth= $(document).width();
-if (documentWidth > 900){
+
   $("#bouton1").click(function(){
 
     $('#desinateurIndus').addClass('animated bounceInLeft');
@@ -124,7 +124,7 @@ if (documentWidth > 900){
         $('#animation').removeClass('animated bounceInLeft');
         }
       });
-    }
+
 
 });
 
