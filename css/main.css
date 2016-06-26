@@ -5,7 +5,7 @@
   font-family: "Basse";
   src: url("Mobile Sans.ttf"); }
   body{
-    background-color:#00CA63;
+    background-color:#F05924;
   }
 /*___________________Nav Bar_________________________*/
 .navbar {
@@ -90,16 +90,24 @@
   /*******Bloc Section1 Qui je suis *****/
   margin: 0;
   padding: 0;
-  padding-bottom: 4.5%;
   padding-top: 50px;
   padding-left: 50px;
   background-color: #F05924;
   color: white; }
 
+  #Section1 +img{ /******Image Ordinateur*****/
+    background: #00CA63;
+    padding: 3%;
+    margin-bottom: 2%;
+    border: 20px solid white;
+  }
+
 #loisir{
   font-family: "yeti";
   font-size: 25px;
   margin-top: 10%;
+  padding-right: 5%;
+  padding-bottom: 5%;
 }
 
 
@@ -107,7 +115,23 @@
   font-size: 40px; }
 
 .contenLoisir {
-  display: flex; }
+  display: flex;
+  text-align: center;
+ }
+
+@media screen and (max-width: 640px){
+  .contenLoisir {
+    display: none;
+    }
+  #loisir{
+    background:url("image/loisir_responsive.png");
+    background-repeat: no-repeat;
+    background-position: 45% 60%;
+    height: 400px;
+    text-align: center;
+    }
+}
+
 
 .blocLoisir {
   display: flex;
@@ -125,16 +149,29 @@
   display: inline-block; }
 
 /*******Section2  *****/
-#conteneurFormation header {
-  text-align: center; }
+#conteneurFormation {
+  color: white;
+}
+
+#conteneurFormation > header > h2{
+  top: 100px;
+  font-size: 60px;
+  font-family: "yeti";
+  text-align: center;
+  padding-top: 10px;
+}
 #conteneurFormation ul {
+  font-family: "yeti";
+  font-size: 30px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: gold;
+  background-color: #F05924;
   height: 450px; }
 
 #conteneurAnimation p {
+  font-family: "Basse";
   position: absolute;
   padding-top: 13%;
   font-size: 40px; }
