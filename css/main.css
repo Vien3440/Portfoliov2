@@ -95,6 +95,13 @@
 /*
   menu icon css3
 */
+button#inputResponsive {
+position: relative;
+padding: 0px;
+bottom: 2px;
+width: 10px;
+right: 28px;
+margin-left: 27px }
 
 .menu-icon {
   position: relative;
@@ -248,8 +255,34 @@
   flex-direction: row;
   text-align: center;
   padding-left: 10px; }
+/*___________________________Section 2 Exp proje Web____________________*/
+#xp {
+  color: white;
+font-family: "yeti";
+margin-left: 5%;
+font-size: 50px;
+text-align: center;
+margin-bottom: 4%;
+}
+.xpDev{
+  font-family: "Basse";
+  font-size: 20px;
+  color:white;
+  font-weight: bold;
+    padding-bottom: 3%;
+}
 
-/*___________________________Section 2 Formation________________________*/
+
+@media (min-width:992px) {
+  div#carousel-example-generic {
+      /* float: left; */
+      right: 20%;
+      border: 47px solid #B9451C;
+      border-left-color: transparent;
+      border-right-color: transparent;
+  }
+}
+/*___________________________Section 3 Formation________________________*/
 /****Skil bar ***/
 .pentagon {
   padding-left: 50px;
@@ -264,11 +297,13 @@
 }
 
 #conteneurFormation > header > h2{
-  top: 100px;
-  font-size: 60px;
-  font-family: "yeti";
-  text-align: center;
-  padding-top: 10px;
+
+    top: 12px;
+    font-size: 60px;
+    font-family: "yeti";
+    text-align: center;
+    padding-top: 80px;
+padding-bottom: 2%;
 }
 #conteneurFormation ul {
   font-family: "yeti";
@@ -280,15 +315,33 @@
   background-color: #F05924;
   height: 450px; }
 
+.boutonForma{  /****Bouton non clikée*******/
+  background: #00CA63;
+  border:5px outset ;
+}
+
+.boutonClikeForma{ /****Bouton clikée*******/
+  background: #01753A;
+  border: 5px inset;
+  border-color: #F05924;
+}
+
 #conteneurAnimation p {
   font-family: "Basse";
   position: absolute;
   padding-top: 13%;
-  font-size: 40px; }
+  padding-bottom: 9%;
+  padding-left: 5%;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px #F05924;
+}
 
 #desinateurIndus {
   visibility: hidden;
-  background-color: red; }
+  background:url("image/fondindus.png");
+  background-size:cover;
+ }
 
 #animation {
   visibility: hidden;

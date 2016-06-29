@@ -93,11 +93,27 @@ $(window).scroll(function(e){  /****Fonction ecoute le scroll***/
 /*************Section Formation*************/
 
   $(document).ready(function(){
+/******Animation-vigniet******/
 
+$("#bouton1").click(function(){
+  $(this).addClass('boutonClikeForma');
+  $("#bouton2").removeClass("boutonClikeForma");
+  $("#bouton3").removeClass("boutonClikeForma");
+})
 
+$("#bouton2").click(function(){
+  $(this).addClass('boutonClikeForma');
+  $("#bouton1").removeClass("boutonClikeForma");
+  $("#bouton3").removeClass("boutonClikeForma");
+})
 
+$("#bouton3").click(function(){
+  $(this).addClass('boutonClikeForma');
+  $("#bouton2").removeClass("boutonClikeForma");
+  $("#bouton1").removeClass("boutonClikeForma");
+})
 
-var documentWidth= $(document).width();
+/*****Animation-Boite***/
 
   $("#bouton1").click(function(){
 
