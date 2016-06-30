@@ -68,6 +68,12 @@ function isValidEmail(email) {
 
 $(window).scroll(function(e){  /****Fonction ecoute le scroll***/
   var scrollTop = $(this).scrollTop();
+
+    if($(window).scrollTop() > 900){
+      $(".graphe").css("visibility","visible");
+        $('.graphe').addClass('animated zoomInRight');
+
+    }
     if($(window).scrollTop() > 10){ /****Nombre de pixcel pour condition ok***/
       console.log(scrollTop)
           $('.navbar').addClass("opaque");/******Aplique l'opasité****/

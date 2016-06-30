@@ -256,6 +256,13 @@ margin-left: 27px }
   text-align: center;
   padding-left: 10px; }
 /*___________________________Section 2 Exp proje Web____________________*/
+
+.graphe{
+  visibility: hidden;
+  padding-bottom: 5%;
+    padding: 5%;
+}
+
 #xp {
   color: white;
 font-family: "yeti";
@@ -266,10 +273,31 @@ margin-bottom: 4%;
 }
 .xpDev{
   font-family: "Basse";
-  font-size: 20px;
-  color:white;
-  font-weight: bold;
-    padding-bottom: 3%;
+  font-size: 25px;
+  color: white;
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 5%;
+}
+
+.idee{
+  position: absolute;
+  top: 288%;
+  right: 75%;
+}
+
+@media (max-width:1200px)  {
+  .idee{
+    top: 500%;
+    right: 70%;
+  }
+}
+
+@media (max-width:992px)  {
+  .idee{
+    display: none;
+  }
 }
 
 
@@ -291,19 +319,18 @@ margin-bottom: 4%;
   margin: auto;
   display: inline-block; }
 
-/*******Section2  *****/
+/*******Section3 *****/
 #conteneurFormation {
   color: white;
 }
 
 #conteneurFormation > header > h2{
 
-    top: 12px;
-    font-size: 60px;
-    font-family: "yeti";
-    text-align: center;
-    padding-top: 80px;
-padding-bottom: 2%;
+font-size: 61px;
+font-family: "yeti";
+text-align: center;
+padding-top: 77%;
+padding-bottom: 1%;
 }
 #conteneurFormation ul {
   font-family: "yeti";
@@ -345,11 +372,73 @@ padding-bottom: 2%;
 
 #animation {
   visibility: hidden;
-  background-color: pink; }
+  background:url("image/animation.png");
+  background-position-y: 460px;
+}
 
 #beweb {
   visibility: hidden;
   background-color: green; }
+
+  .numero{
+    display: none;
+  }
+
+@media (max-width:625px) {
+  .numero{
+    display: block;
+    font-size: 20px;
+  }
+  .texte{
+    display: none;
+  }
+}
+
+@media (max-width:750px) {
+  #conteneurAnimation p {
+    font-size: 25.6px;
+  }
+
+}
+
+  /***************footer*******************/
+
+  #footer{
+    margin-top: 70px;
+    font-family: "yeti";
+    background-color: #00CA63;
+    height: 240px;
+    font-size: 30px;
+  }
+
+  #footer > article{
+    margin-top: 50px;
+    height: 160px;
+    background-color: rgba(0, 0, 0, .5);  }
+
+  #footer1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #footer2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #footer > article{
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+    #footer  div {
+      background-color: #006632;
+      margin-top: 50px;
+      height: 160px;
+    }
 
 /********Contacte*******/
 .boite {
