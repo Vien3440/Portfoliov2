@@ -275,7 +275,7 @@ margin-bottom: 4%;
   font-family: "Basse";
   font-size: 25px;
   color: white;
-
+  padding-left: 50px;
   padding-top: 1%;
   padding-bottom: 1%;
   margin-top: 5%;
@@ -334,23 +334,31 @@ padding-bottom: 1%;
 }
 #conteneurFormation ul {
   font-family: "yeti";
-  font-size: 30px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: #F05924;
-  height: 450px; }
+font-size: 30px;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+background-color: #00CA63;
+height: 450px;
+
+ }
+
+ p.texte {
+     position: relative;
+     top: 30%;
+     text-shadow: 2px 2px rgba(58, 105, 29, 0.64);
+
+ }
 
 .boutonForma{  /****Bouton non clikée*******/
-  background: #00CA63;
-  border:5px outset ;
+height: 34%;
+position: relative;
 }
 
 .boutonClikeForma{ /****Bouton clikée*******/
   background: #01753A;
-  border: 5px inset;
-  border-color: #F05924;
+
 }
 
 #conteneurAnimation p {
@@ -361,12 +369,11 @@ padding-bottom: 1%;
   padding-left: 5%;
   font-size: 40px;
   font-weight: bold;
-  text-shadow: 2px 2px #F05924;
 }
 
 #desinateurIndus {
   visibility: hidden;
-  background:url("image/fondindus.png");
+  background:url("image/fondindus2.png");
   background-size:cover;
  }
 
@@ -374,6 +381,8 @@ padding-bottom: 1%;
   visibility: hidden;
   background:url("image/animation.png");
   background-position-y: 460px;
+  background-size: cover;
+background-position-y: 532px;
 }
 
 #beweb {
@@ -382,6 +391,8 @@ padding-bottom: 1%;
 
   .numero{
     display: none;
+    position: relative;
+    top: 30%;
   }
 
 @media (max-width:625px) {
@@ -404,6 +415,7 @@ padding-bottom: 1%;
   /***************footer*******************/
 
   #footer{
+    color:white;
     margin-top: 70px;
     font-family: "yeti";
     background-color: #00CA63;
@@ -414,7 +426,7 @@ padding-bottom: 1%;
   #footer > article{
     margin-top: 50px;
     height: 160px;
-    background-color: rgba(0, 0, 0, .5);  }
+}
 
   #footer1{
     display: flex;
@@ -422,11 +434,7 @@ padding-bottom: 1%;
     text-align: center;
   }
 
-  #footer2{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
+
 
   #footer > article{
     padding: 3%;
@@ -436,6 +444,7 @@ padding-bottom: 1%;
 
     #footer  div {
       background-color: #006632;
+      border-left: 5px solid #00CA63;
       margin-top: 50px;
       height: 160px;
     }
