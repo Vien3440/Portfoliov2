@@ -68,7 +68,7 @@ function isValidEmail(email) {
 
 $(window).scroll(function(e){  /****Fonction ecoute le scroll***/
   var scrollTop = $(this).scrollTop();
-	
+
     if($(window).scrollTop() > 10){ /****Nombre de pixcel pour condition ok***/
       console.log(scrollTop)
           $('.navbar').addClass("opaque");/******Aplique l'opasité****/
@@ -91,6 +91,14 @@ $(window).scroll(function(e){  /****Fonction ecoute le scroll***/
     $(this).toggleClass("open")
     })
 
+    $('a[href="#bouton1"],a[href="#Section1"],a[href="#xpDev"]').click(function(){
+    	var the_id = $(this).attr("href");
+
+    	$('html, body').animate({
+    		scrollTop:$(the_id).offset().top
+    	}, 'slow');
+    	return false;
+    });
 
 
 

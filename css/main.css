@@ -183,6 +183,7 @@ margin-left: 27px }
   color: #006733;
   font-size: 60px;
   text-align: center;
+  margin-top: 25px;
   /********Position Titre**********/ }
 
 #contaireImg {
@@ -194,9 +195,12 @@ margin-left: 27px }
 .titre1P1 {
   padding-top: 20px;
   font-family: "yeti";
-  font-size: 60px; }
+  font-size: 60px;
+  margin-left: 50px;
+}
 
 .section1P1 {
+  margin-left: 50px;
   padding-left: 10px;
   padding-top: 60px;
   display: flex;
@@ -208,7 +212,6 @@ margin-left: 27px }
   margin: 0;
   padding: 0;
   padding-top: 50px;
-  padding-left: 50px;
   background-color: #F05924;
   color: white; }
 
@@ -220,6 +223,7 @@ margin-left: 27px }
   }
 
 #loisir{
+  margin-left: 45px;
   font-family: "yeti";
   font-size: 25px;
   margin-top: 10%;
@@ -246,6 +250,7 @@ margin-left: 27px }
     background-position:center;
     height: 400px;
     text-align: center;
+    margin-left: 0;
     }
 }
 
@@ -281,6 +286,18 @@ margin-bottom: 4%;
   margin-top: 5%;
 }
 
+#roue{
+  position: absolute;
+}
+
+@media(max-width:720px) {
+  #roue{
+    position: absolute;
+    width: 200px;
+    height: 169px;
+  }
+}
+
 .idee{
   position: absolute;
   top: 288%;
@@ -306,8 +323,8 @@ margin-bottom: 4%;
       /* float: left; */
       right: 20%;
       border: 47px solid #B9451C;
-      border-left-color: transparent;
-      border-right-color: transparent;
+      border-left-color: rgba(0, 0, 0, 0.26);
+      border-right-color: rgba(0, 0, 0, 0.26);
   }
 }
 /*___________________________Section 3 Formation________________________*/
@@ -329,7 +346,7 @@ margin-bottom: 4%;
 font-size: 61px;
 font-family: "yeti";
 text-align: center;
-padding-top: 77%;
+padding-top: 87%;
 padding-bottom: 1%;
 }
 #conteneurFormation ul {
@@ -339,7 +356,6 @@ text-align: center;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
-background-color: #00CA63;
 height: 450px;
 
  }
@@ -354,6 +370,7 @@ height: 450px;
 .boutonForma{  /****Bouton non clikée*******/
 height: 34%;
 position: relative;
+background: #00CA63;
 }
 
 .boutonClikeForma{ /****Bouton clikée*******/
@@ -379,7 +396,7 @@ position: relative;
 
 #animation {
   visibility: hidden;
-  background:url("image/animation.png");
+  background:url("image/animation2.png");
   background-position-y: 460px;
   background-size: cover;
 background-position-y: 532px;
@@ -387,7 +404,9 @@ background-position-y: 532px;
 
 #beweb {
   visibility: hidden;
-  background-color: green; }
+
+    background-color: #01753A;
+   }
 
   .numero{
     display: none;
@@ -415,38 +434,23 @@ background-position-y: 532px;
   /***************footer*******************/
 
   #footer{
+    text-align: center;
     color:white;
     margin-top: 70px;
     font-family: "yeti";
     background-color: #00CA63;
     height: 240px;
     font-size: 30px;
-  }
-
-  #footer > article{
-    margin-top: 50px;
-    height: 160px;
-}
-
-  #footer1{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-
-
-  #footer > article{
-    padding: 3%;
     display: flex;
     justify-content: space-around;
   }
 
-    #footer  div {
-      background-color: #006632;
-      border-left: 5px solid #00CA63;
-      margin-top: 50px;
-      height: 160px;
+  #sociaux > ul{
+    display: flex;
+  }
+
+    #sociaux > ul > li{
+      /*margin-left: 10px;*/
     }
 
 /********Contacte*******/
